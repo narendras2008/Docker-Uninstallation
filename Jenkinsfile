@@ -21,10 +21,9 @@ pipeline {
                 sh 'sudo yum remove docker -y'
             }
         }
-           
     }
-    post{
-        always{
+    post {
+        always {
             cleanWS()
         }
     }
